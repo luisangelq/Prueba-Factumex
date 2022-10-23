@@ -20,6 +20,7 @@
   "scripts": {
     "start:dev": "env-cmd -f .env.dev react-scripts start",
     "start:prod": "env-cmd -f .env.production react-scripts start",
+    "build:static": "env-cmd -f .env.dev react-scripts build",
     "build": "react-scripts build"
   },
   "eslintConfig": {
