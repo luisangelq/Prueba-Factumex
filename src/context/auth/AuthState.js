@@ -3,17 +3,17 @@ import { Auth, Props, User } from "../../interfaces/Context";
 import AuthContext from "./AuthContext";
 import AuthReducer from "./AuthReducer";
 
-const AuthState = (props: Props) => {
-  const userStored = JSON.parse(localStorage.getItem("user") || "{}");
+const AuthState = (props) => {
+  const userStored = JSON.parse(localStorage.getItem("user"));
 
-  const initialState: Auth = {
+  const initialState = {
     user: userStored ? userStored : null,
     isAuthenticated: userStored ? true : false,
   };
 
   const [state, dispatch] = useReducer(AuthReducer, initialState );
 
-  const loginUser = (user: User) => {
+  const loginUser = (user) => {
     dispatch({
       type: "SUCCESSFUL_LOGIN",
       payload: user,

@@ -4,7 +4,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 import {successAlert, errorAlert } from "../../hooks/useAlert";
 
 import AuthContext from "../../context/auth/AuthContext";
-import { User } from "../../interfaces/Context";
+
 
 const Login = () => {
   const InitialState = {
@@ -13,19 +13,19 @@ const Login = () => {
   };
   const navigate = useNavigate();
   const { isAuthenticated, loginUser } = useContext(AuthContext);
-  const [user, setUser] = useState<User>({
+  const [user, setUser] = useState({
     userName: "",
     password: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e) => {
     setUser({
       ...user,
       [e.target.name]: e.target.value,
     });
   };
 
-  const blockCopyAndPaste = (e: any) => {
+  const blockCopyAndPaste = (e) => {
     e.preventDefault();
 
     if (e.type === "copy" || e.type === "cut" || e.type === "paste") {
@@ -33,7 +33,7 @@ const Login = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     if (user.userName.trim() === "" || user.password.trim() === "") {

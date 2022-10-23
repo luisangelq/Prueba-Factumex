@@ -5,7 +5,7 @@ type UserAction = {
   payload: User | null;
 }
 
-const AuthReducer = (state: Auth, action: UserAction ): Auth => {
+const AuthReducer = (state: Auth, action: UserAction ) => {
   switch (action.type) {
     case "SUCCESSFUL_LOGIN":
       localStorage.setItem("user", JSON.stringify(action.payload?.userName));

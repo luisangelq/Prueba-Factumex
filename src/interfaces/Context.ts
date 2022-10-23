@@ -3,11 +3,11 @@ export interface Props {
 }
 
 export interface User {
-    userName: string;
-    password: string;
+    userName: string | null;
+    password: string | null;
 }
 
 export interface Auth {
-  user: string | null | {};
+  user: string | null;
   isAuthenticated: boolean;
 }
