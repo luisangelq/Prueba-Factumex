@@ -37,12 +37,10 @@ Primero necesitaras crear un archivo **.env.dev** y agregar la siguiente variabl
 ## Build Produccion
 Para hacer el build a produccion necesitaras lo siguiente.
 
-- Ejecutar el comando build para generar la carpeta de archivos estaticos y subirla a algun servicio de host.
-
-
+- Ejecutar el comando siguiente comando para generar la carpeta build de archivos estaticos y subirla a algun servicio de host.
 
 ```bash
-  npm build
+  npm build:static
 ```
 
 - Tambien puedes conectar el repositorio con un servicio de host y solo establecer dependiendo del servicio la variable de entorno.
