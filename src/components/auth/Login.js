@@ -5,12 +5,10 @@ import {successAlert, errorAlert } from "../../hooks/useAlert";
 
 import AuthContext from "../../context/auth/AuthContext";
 
+import db from "../../db.json";
+
 
 const Login = () => {
-  const InitialState = {
-    userName: "luis_angel",
-    password: "admin",
-  };
   const navigate = useNavigate();
   const { isAuthenticated, loginUser } = useContext(AuthContext);
   const [user, setUser] = useState({
@@ -41,7 +39,7 @@ const Login = () => {
       return;
     }
 
-    if (user.userName === InitialState.userName && user.password === InitialState.password) {
+    if (user.userName === db.credentials.userName && user.password === db.credentials.password) {
       successAlert("Bienvenido");
       loginUser(user);
       navigate("/employees");
