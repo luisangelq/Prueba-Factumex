@@ -1,0 +1,52 @@
+:root {
+  --DarkBlue: #173877;
+  --MediumBlue: #137DC5;
+  --LightBlue: #47cadb;
+  --WhiteBlue: #dbf0f3;
+  --White: #f7f7f7;
+  --Gray: #d9d9d9;
+  --Green: #4fae77;
+  --Red: #EF4E4E;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-image: url("./images/back-login.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-x: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+input,
+button,
+a,
+span {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  border: none;
+  color: var(--DarkBlue);
+}
+
+button{
+  cursor: pointer;
+  background-color: transparent;
+}
