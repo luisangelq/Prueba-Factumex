@@ -1,6 +1,7 @@
 # Prueba Factumex
 
 - Este proyecto fue creado como reto de codigo, donde se integran multiples funcionalidades como manejo de ambientes de desarrollo, Context API como manejador del estado, Hashrouting con rutas protegidas, persistencia de datos, consumo y manejo de API de terceros, manejador de imagenes.
+
 Se trato de integrar typescript pero al ser una tecnologia donde no se tenia experiencia no se saco el maximo provecho y espero hacerlo pronto.
 
 - Puedes ver el proyecto en https://prueba-factumex.vercel.app
