@@ -10,11 +10,14 @@ Se trato de integrar typescript pero al ser una tecnologia donde no se tenia exp
 
 ## Correr el proyecto en Desarrollo
 Para correr el proyecto localmente se necesitan seguir los siguientes pasos
+
+- Descargar o clonar el repositorio
+
 ### Variables de entorno
  
 Primero necesitaras crear un archivo **.env.dev** y agregar la siguiente variable
 
-`REACT_APP_API`: https://6edeayi7ch.execute-api.us-east-1.amazonaws.com/v1/examen/employees/ **TU_NOMBRE**
+`REACT_APP_API`=https://6edeayi7ch.execute-api.us-east-1.amazonaws.com/v1/examen/employees/ **TU_NOMBRE**
 
 - Posterior instalar los paquetes necesarios y arrancar el servidor con los siguientes comandos
 ```bash
@@ -43,7 +46,7 @@ Para hacer el build a produccion necesitaras lo siguiente.
 ```
 
 - Tambien puedes conectar el repositorio con un servicio de host y solo establecer dependiendo del servicio la variable de entorno.
-`REACT_APP_API`: https://6edeayi7ch.execute-api.us-east-1.amazonaws.com/v1/examen/employees/ **TU_NOMBRE**
+`REACT_APP_API`=https://6edeayi7ch.execute-api.us-east-1.amazonaws.com/v1/examen/employees/ **TU_NOMBRE**
 
   
 ## Authors
